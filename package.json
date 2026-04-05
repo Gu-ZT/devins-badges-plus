@@ -2,11 +2,18 @@
   "name": "@gugle/devins-badges-plus",
   "version": "0.0.1",
   "description": "Beautifully designed badges for many services.",
-  "license": "CC0-1.0",
-  "repository": "Gu-ZT/devins-badges-plus",
-  "bugs": "https://github.com/Gu-ZT/devins-badges-plus/issues",
   "keywords": [
     "badges",
     "documentation"
-  ]
+  ],
+  "homepage": "https://github.com/Gu-ZT/devins-badges-plus",
+  "bugs": {
+    "url": "https://github.com/Gu-ZT/devins-badges-plus/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gu-ZT/devins-badges-plus.git"
+  },
+  "license": "CC0-1.0",
+  "author": "Gugle"
 }
