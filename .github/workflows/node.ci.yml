@@ -42,14 +42,8 @@ jobs:
       - name: Echo Version 2
         id: echo-version-2
         run: echo ${{ steps.get-version-2.outputs.version_2 }}
-      - name: Setup pnpm
-        run: npm i -g pnpm
       - name: Install typescript
         run: npm i -g typescript
-      - name: Init project
-        run: pnpm i
-      - name: Build project
-        run: pnpm run build
       - name: Push to npm repository
         run: npm publish
         env:
