@@ -38,6 +38,8 @@ assets/
       gpl-v3_vector.svg
       lgpl-v3_vector.svg
       mit_vector.svg
+    social/
+      heybox-chat_vector.svg
 ```
 
 ## Using in your project

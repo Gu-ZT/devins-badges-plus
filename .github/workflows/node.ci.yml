@@ -8,17 +8,22 @@ on:
       - assets/**
       - package.json
 
+permissions:
+  id-token: write  # Required for OIDC
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Setup node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6.4.0
         with:
-          node-version: 20
+          node-version: 24
           registry-url: https://registry.npmjs.org/
+          package-manager-cache: false
       - name: Get Build Number
         id: get-number
         run: echo "build_number=$GITHUB_RUN_NUMBER" >> $GITHUB_OUTPUT
@@ -46,5 +51,3 @@ jobs:
         run: npm i -g typescript
       - name: Push to npm repository
         run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
