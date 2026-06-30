@@ -1,6 +1,6 @@
 # devins-badges-plus
 
-A small, focused extension of [Devin's Badges](https://github.com/intergrav/devins-badges), currently containing the `cozy/license` badge set as SVG assets.
+A small, focused extension of [Devin's Badges](https://github.com/intergrav/devins-badges), currently containing the `cozy/license`, `cozy/mc` and `cozy/social` badge sets as SVG assets.
 
 ![](assets/cozy/license/cc0_vector.svg)
 
@@ -38,13 +38,21 @@ assets/
       gpl-v3_vector.svg
       lgpl-v3_vector.svg
       mit_vector.svg
+    mc/
+      teacon/
+        teacon2020-*_vector.svg
+        teacon2021-*_vector.svg
+        teacon2022-*_vector.svg
+        teacon2023-*_vector.svg
+        teacon_jiachen-*_vector.svg
+        teacon2026-*_vector.svg
     social/
       heybox-chat_vector.svg
 ```
 
 ## Using in your project
 
-Pick the SVG you need from `assets/cozy/license/` and use it directly.
+Pick the SVG you need from `assets/cozy/license/`, `assets/cozy/mc/` or `assets/cozy/social/` and use it directly.
 
 Examples:
 
@@ -54,6 +62,24 @@ Examples:
 
 ```markdown
 ![MIT License](assets/cozy/license/mit_vector.svg)
+```
+
+```markdown
+![TeaCon 2023 Winner: Artist](assets/cozy/mc/teacon/teacon2023-winner-artist_vector.svg)
+```
+
+Or:
+
+```html
+<img alt="MIT License" src="https://cdn.jsdelivr.net/npm/@gugle/devins-badges-plus/assets/cozy/license/mit_vector.svg" />
+```
+
+```markdown
+![MIT License](https://cdn.jsdelivr.net/npm/@gugle/devins-badges-plus/assets/cozy/license/mit_vector.svg)
+```
+
+```markdown
+![TeaCon 2023 Winner: Artist](https://cdn.jsdelivr.net/npm/@gugle/devins-badges-plus/assets/cozy/mc/teacon/teacon2023-winner-artist_vector.svg)
 ```
 
 If you publish these files from your own CDN or static host, replace the path with your hosted URL.
