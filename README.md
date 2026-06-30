@@ -46,6 +46,8 @@ assets/
         teacon2023-*_vector.svg
         teacon_jiachen-*_vector.svg
         teacon2026-*_vector.svg
+      anvilcraft_vector.svg
+      anvillib_vector.svg
     social/
       heybox-chat_vector.svg
 ```
